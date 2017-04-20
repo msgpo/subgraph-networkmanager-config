@@ -1,0 +1,14 @@
+#!/bin/sh
+
+set -e
+
+case "$2" in
+    up)
+        [ -x /usr/sbin/ferm ] || exit 2
+        /bin/systemctl reload ferm
+    ;;        
+    *)
+    exit 0
+    ;;
+esac
+

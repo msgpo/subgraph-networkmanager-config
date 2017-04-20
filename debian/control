@@ -1,0 +1,15 @@
+Source: subgraph-networkmanager-config
+Section: config
+Priority: extra
+Maintainer: David McKinney <mckinney@subgraph.com>
+Build-Depends: debhelper (>= 9), config-package-dev
+Standards-Version: 3.9.8
+Homepage: https://subgraph.com/sgos/index.en.html
+
+Package: subgraph-networkmanager-config
+Architecture: any
+Depends: ${misc:Depends}, resolvconf
+Provides: ${diverted-files}
+Conflicts: ${diverted-files}
+Description: NetworkManager configuration package for Subgraph OS.
+ This configuration package includes the default settings for /etc/NetworkManager/NetworkManager.conf and other required configuration to be used with Subgraph OS.

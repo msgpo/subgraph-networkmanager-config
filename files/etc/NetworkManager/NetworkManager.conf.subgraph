@@ -1,0 +1,15 @@
+[main]
+plugins=ifupdown,keyfile
+dns=none
+
+[ifupdown]
+managed=false
+
+[ip4]
+dhcp-send-hostname=false
+
+[connection]
+ethernet.cloned-mac-address=preserve
+wifi.cloned-mac-address=preserve
+
+
