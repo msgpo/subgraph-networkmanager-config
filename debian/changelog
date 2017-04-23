@@ -1,0 +1,21 @@
+subgraph-networkmanager-config (0.16) UNRELEASED; urgency=medium
+
+  * Added MAC address preserve settings to NetworkManager.conf 
+
+ -- David McKinney <mckinney@subgraph.com>  Tue, 27 Dec 2016 17:46:22 -0500
+
+subgraph-networkmanager-config (0.15) unstable; urgency=medium
+  
+  * Created /etc/rc.local diversion for creating /etc/resolv.conf on startup if it does not exist 
+  * Created /etc/default/resolvconf with TRUNCATE_NAMESERVER_LIST_AFTER_127="yes"
+  * Added dhcp-send-hostname=false to NetworkManager config file
+  * Fixed up control file for config-package-dev
+  * Added dispatcher.d hook for reloading ferm
+
+ -- David McKinney <mckinney@subgraph.com>  Wed, 03 Feb 2016 02:57:46 +0000
+
+subgraph-networkmanager-config (0.1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- David McKinney <mckinney@subgraph.com>  Tue, 22 Sep 2015 14:26:09 -0400
